@@ -1,0 +1,12 @@
+{
+  "public": {
+    "WechatId": "wxc50410ac4f180962",
+    "WechatSecret": "9771f1eb8698a118f4eb5068c96b543b",
+    "role": "admin",
+    "group": "admin"
+  },
+  "private": {
+    "admin": "admin",
+    "password": "admin"
+  }
+}
