@@ -3,7 +3,7 @@ class _Page extends React.Component {
   render() {
     return (
       <div>
-        Loading
+        来自Home
       </div>
     );
   }

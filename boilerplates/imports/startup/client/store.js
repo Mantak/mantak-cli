@@ -1,17 +1,16 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import createLogger from 'redux-logger';
 import ReduxThunk from 'redux-thunk';
-import { reducer } from 'redux-form';
-
+import { reducer as formReducer } from 'redux-form';
 import layoutReducer from './reducers/layout';
-import viewsReducer from './reducers/views';
+import frontReducer from './reducers/front';
 
 const logger = createLogger();
 
 const reducers = combineReducers({
-  form: reducer,
+  form: formReducer,
   layout: layoutReducer,
-  views: viewsReducer,
+  front: frontReducer,
 });
 
 const preloadedState = {};

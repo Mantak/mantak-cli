@@ -1,9 +1,9 @@
-import viewsRoutes from '/imports/ui/views/routes';
+import forntRoutes from '/imports/ui/front/routes';
 import adminRoutes from '/imports/ui/admin/routes';
 
 const appRoutes = [
   ...adminRoutes,
-  ...viewsRoutes,
+  ...forntRoutes,
 ];
 
 export default appRoutes;
