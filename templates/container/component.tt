@@ -1,0 +1,17 @@
+import React from 'react';
+import Loading from '/imports/ui/lib/loading';
+
+class _Component extends React.Component {
+  render() {
+    return (
+      this.props.ready ?
+      <div>
+        hello
+      </div>
+      :
+      <Loading/>
+    );
+  }
+}
+
+export default _Component;

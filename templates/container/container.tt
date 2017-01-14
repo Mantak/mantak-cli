@@ -1,0 +1,11 @@
+import { createContainer } from 'meteor/react-meteor-data';
+import _Component from '../components/<%= fileName %>';
+
+function _data(props) {
+  return {
+    ready: false,
+    data: props,
+  };
+}
+
+export default createContainer(_data, _Component);

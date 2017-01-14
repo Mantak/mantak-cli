@@ -1,12 +1,18 @@
 {
   "public": {
-    "WechatId": "wxc50410ac4f180962",
-    "WechatSecret": "9771f1eb8698a118f4eb5068c96b543b",
+    "AppId": "wxc50410ac4f180962",
+    "AppSecret": "9771f1eb8698a118f4eb5068c96b543b",
     "role": "admin",
     "group": "admin"
   },
   "private": {
     "admin": "admin",
-    "password": "admin"
+    "password": "admin",
+    "qiniu": {
+      "accessKey": "872__edzAYwFabesEEJxpICxO3pYftcutexTfhTK",
+      "secretKey": "BqxAZpXCXAC7PsIOwycK-2gVoGzQ4u9NKuw21IEn",
+      "bucket": "mantak",
+      "domain": "http://ojhhy3phy.bkt.clouddn.com/"
+    }
   }
 }
