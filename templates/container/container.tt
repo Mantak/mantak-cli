@@ -1,5 +1,5 @@
 import { createContainer } from 'meteor/react-meteor-data';
-import _Component from '../components/<%= fileName %>';
+import _Component from '<%= filePath %>';
 
 function _data(props) {
   return {

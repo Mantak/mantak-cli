@@ -1,6 +1,6 @@
 {
   "name": "mantak-cli",
-  "version": "1.0.83",
+  "version": "1.0.89",
   "description": "",
   "bin": {
     "mantak": "./bin/mantak"
