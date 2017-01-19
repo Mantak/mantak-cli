@@ -13,9 +13,9 @@ import RegisterIcon from 'material-ui/svg-icons/social/person-add';
 import ForgotIcon from 'material-ui/svg-icons/action/lock-open';
 import FlatButton from 'material-ui/FlatButton';
 
-import LoginForm from '../components/login_form';
-import RegisterForm from '../components/register_form';
-import ForgotPasswordForm from '../components/forgot_password_form';
+import LoginForm from '../components/login/login_form';
+import RegisterForm from '../components/login/register_form';
+import ForgotPasswordForm from '../components/login/forgot_password_form';
 
 
 class _Page extends React.Component {

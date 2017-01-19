@@ -7,7 +7,7 @@ import 'react-s-alert/dist/s-alert-css-effects/flip.css';
 import Alert from 'react-s-alert';
 
 
-import ResetPasswordForm from '../components/reset_password_form';
+import ResetPasswordForm from '../components/login/reset_password_form';
 
 
 class _Page extends React.Component {
