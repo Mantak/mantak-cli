@@ -2,17 +2,28 @@
   "public": {
     "AppId": "wxc50410ac4f180962",
     "AppSecret": "9771f1eb8698a118f4eb5068c96b543b",
-    "role": "admin",
-    "group": "admin"
+    "role": "owner",
+    "group": "administrator"
   },
   "private": {
-    "admin": "admin",
-    "password": "admin",
+    "originUser": {
+      "email": "meteor.vim@gmail.com",
+      "username": "admin",
+      "password": "admin"
+    },
     "qiniu": {
       "accessKey": "872__edzAYwFabesEEJxpICxO3pYftcutexTfhTK",
       "secretKey": "BqxAZpXCXAC7PsIOwycK-2gVoGzQ4u9NKuw21IEn",
       "bucket": "mantak",
       "domain": "http://ojhhy3phy.bkt.clouddn.com/"
+    },
+    "mailgun": {
+      "login": "postmaster@sandbox3756dd2cf1e44ca1a0bf00e8e5c03646.mailgun.org",
+      "password": "537dc1c08d225e189edc649fd3c06387"
+    },
+    "email": {
+      "siteName": "我的网站",
+      "siteEmail": "admin@domail.com"
     }
   }
 }

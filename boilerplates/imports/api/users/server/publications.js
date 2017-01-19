@@ -1,6 +1,6 @@
 import {Meteor} from 'meteor/meteor';
 import _Collection from '../collection';
 
-Meteor.publish('<%= className %>.all', function() {
+Meteor.publish('User.all', function() {
   return _Collection.find();
 });

@@ -12,7 +12,6 @@ import AppRoutes from '/imports/startup/client/routes';
 
 injectTapEventPlugin();
 
-
 Meteor.startup(()=> {
   ReactDOM.render(
     <Provider store={AppStore}>

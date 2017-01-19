@@ -1,9 +1,15 @@
 import React, { PropTypes } from 'react';
 import { browserHistory } from 'react-router';
+
+import 'react-s-alert/dist/s-alert-default.css';
+import 'react-s-alert/dist/s-alert-css-effects/slide.css';
+import Alert from 'react-s-alert';
+
 class _Layout extends React.Component {
   render() {
     return (
       <div>
+        <Alert stack={{limit: 3}} />
         来自layout
         {this.props.children}
         <span onClick={()=> browserHistory.push('/')}>
