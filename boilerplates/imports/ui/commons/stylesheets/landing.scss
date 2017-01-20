@@ -1,0 +1,100 @@
+@mixin mockup{
+  position:absolute;
+  margin:0 auto;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom:0;
+}
+
+#landing{
+  @include animation;
+}
+#hero{
+  z-index: -1;
+  position: relative;
+  text-align:center;
+  background-color: $main-color;
+  color: #FFF;
+  .logo{
+    position: absolute;
+  }
+  h2 {
+    font-family: 'slogan';
+    font-weight: normal;
+    font-style: normal;
+    opacity:0.9;
+    margin: 0.1em;
+  }
+  h6 {
+    font-weight: normal;
+    font-style: normal;
+    opacity:0.7;
+    margin: 0.1em;
+  }
+  .s-1 {@include animation; animation-delay:0.2s; -moz-animation-delay:0.2s; -webkit-animation-delay:0.2s;}
+  .s-2 {@include animation; animation-delay:0.4s; -moz-animation-delay:0.4s; -webkit-animation-delay:0.4s;}
+  .s-3 {@include animation; animation-delay:0.6s; -moz-animation-delay:0.6s; -webkit-animation-delay:0.6s;}
+  .s-4 {@include animation; animation-delay:0.8s; -moz-animation-delay:0.8s; -webkit-animation-delay:0.8s;}
+  .s-5 {@include animation; animation-delay:1.2s; -moz-animation-delay:1.2s; -webkit-animation-delay:1.2s;}
+  .s-6 {@include animation; animation-delay:1.4s; -moz-animation-delay:1.4s; -webkit-animation-delay:1.4s;}
+  .s-7 {@include animation; animation-delay:1.6s; -moz-animation-delay:1.6s; -webkit-animation-delay:1.6s;}
+  .s-8 {@include animation; animation-delay:1.8s; -moz-animation-delay:1.8s; -webkit-animation-delay:1.8s;}
+
+  .s-i {@include animation; animation-delay:2s; -moz-animation-delay:2s; -webkit-animation-delay:2s;}
+  .s-b {@include animation; animation-delay:2.5s; -moz-animation-delay:2.5s; -webkit-animation-delay:2.5s;}
+
+  .mockups {
+    position:relative;
+    margin-top:3rem;
+    margin-bottom:-1rem;
+  }
+  .mockups-2 {
+    @include mockup;
+    @include animation;
+    z-index: -5;
+    animation-delay:0.2s;
+    -moz-animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+  }
+  .mockups-3 {
+    @include mockup;
+    @include animation;
+    z-index: -5;
+    animation-delay:0.5s;
+    -moz-animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+  }
+}
+
+#features{
+  background-color: $grey-color;
+  text-align:center;
+}
+
+#usecases{
+}
+
+#screenshots{
+  text-align:center;
+  background-color: $grey-color;
+}
+#screenshots .container{
+  text-align:center;
+}
+
+#reviews{
+  text-align:center;
+  background-color: $main-color;
+}
+
+#faq{
+}
+
+#reviews img{
+  border-radius:50%;
+}
+
+#footer{
+  background-color: $main-color;
+}

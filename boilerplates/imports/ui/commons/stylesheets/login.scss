@@ -1,7 +1,7 @@
 #login{
-  .animation;
+  @include animation;
   height: 100vh;
-  background-color: @main-color;
+  background-color: $main-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +13,7 @@
   background: #ffffff;
   max-width: 320px;
   width: 100%;
-  border-top: 5px solid @orange-color;
+  border-top: 5px solid $orange-color;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
 }
@@ -21,7 +21,7 @@
   position: absolute;
   top: -0;
   right: -0;
-  background: @orange-color;
+  background: $orange-color;
   width: 36px;
   height: 36px;
   margin: -5px 0 0;
@@ -41,7 +41,7 @@
 .form-module h2 {
   font-weight:bold;
   margin: 0 0 20px;
-  color: @deep-grey-color;
+  color: $deep-grey-color;
   font-size: 18px;
   font-weight: 400;
   line-height: 1;

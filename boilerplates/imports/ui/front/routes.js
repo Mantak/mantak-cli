@@ -1,6 +1,7 @@
 import Layout from './layout/layout';
 import Home from './pages/home';
 import Profile from './pages/profile';
+import Editor from './pages/editor';
 
 const _routes = [
   { path: '/',
@@ -8,6 +9,7 @@ const _routes = [
     indexRoute: { component: Home },
     childRoutes: [
       { path: 'profile', component: Profile },
+      { path: 'editor', component: Editor },
     ],
   },
 ];
