@@ -1,6 +1,10 @@
-import {Meteor} from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';
 import _Collection from '../collection';
 
 Meteor.publish('<%= className %>.all', function() {
   return _Collection.find();
+});
+
+Meteor.publish('<%= className %>.one', function(id) {
+  return _Collection.find({_id: id});
 });

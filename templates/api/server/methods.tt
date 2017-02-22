@@ -1,11 +1,19 @@
-import {Meteor} from 'meteor/meteor';
-import _Collection from '../collection';
+import { Meteor } from 'meteor/meteor';
+import _Model from '../collection';
 
 Meteor.methods({
-  '<%= className %>.create'() {
+  '<%= className %>.create'(model) {
+    const _model = new _Model(model);
+    _model.save();
   },
-
-  '<%= className %>.delete'() {
+  '<%= className %>.update'(id, model) {
+    const _model = _Model.findOne(id);
+    Object.assign(_model, model);
+    _model.save();
   },
+  '<%= className %>.delete'(id) {
+    // _model = _Model.findOne(id);
+    // _model.remove();
+    _Model.remove(id);
+  }
 });
-
