@@ -1,5 +1,7 @@
 import React from 'react';
-import Loading from '/imports/ui/lib/loading';
+import PropTypes from 'prop-types';
+
+import Loading from '/imports/ui/commons/components/loading';
 
 class _Component extends React.Component {
   render() {
@@ -13,5 +15,9 @@ class _Component extends React.Component {
     );
   }
 }
+_Component.propTypes = {
+  ready: PropTypes.bool,
+  data: PropTypes.array,
+};
 
 export default _Component;

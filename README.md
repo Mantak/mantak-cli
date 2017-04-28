@@ -1,6 +1,10 @@
 ### mantak g c (module:)name(@front/admin/commons)
+container
 ### mantak g p name(@front/admin/commons)
+page
 ### mantak g a name
+api
+### 注意这里没有component，原则上，没有动态数据的，就不要从page里单独提取出来了
 ### meteor 包
 service-configuration
 accounts-base

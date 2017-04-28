@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 class _Page extends React.Component {
   render() {
     return (
@@ -8,4 +10,10 @@ class _Page extends React.Component {
     );
   }
 }
+
+_Page.propTypes = {
+  ready: PropTypes.bool,
+  data: PropTypes.array,
+};
+
 export default _Page;

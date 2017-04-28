@@ -1,6 +1,7 @@
 import { Accounts } from 'meteor/accounts-base';
 
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import 'react-s-alert/dist/s-alert-default.css';
 import 'react-s-alert/dist/s-alert-css-effects/flip.css';
